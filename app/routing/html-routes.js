@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = function(app) {
     // link to quiz
-    app.get('/quiz', function(req, res) {
+    app.get('/survey', function(req, res) {
         res.sendFile(path.join(__dirname + '/../public/survey.html'));
     });
 

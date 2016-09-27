@@ -12,6 +12,6 @@ module.exports = function(app) {
     // POST Requests
     // handle data after for submission
     app.post('/api/friends', function(req, res) {
-        friendsData.push(req.body);
+        friendArray.push(req.body);
     });
 };
