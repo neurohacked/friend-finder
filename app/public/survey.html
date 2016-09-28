@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Get Paired | Survey</title>
+	<title>Git Paired | Survey</title>
 
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -35,7 +35,7 @@
 				<hr>
 
 				<h3><strong>Question 1</strong></h3>
-				<h4>You enjoy eating sweet things.</h4>
+				<h4>You prefer using Sublime Text as an editor.</h4>
 				<select data-placeholder="" class="chosen-select" id="q1">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -46,7 +46,7 @@
 		      	</select>
 
 				<h3><strong>Question 2</strong></h3>
-				<h4>You enjoy eating out at popular restaurants.</h4>
+				<h4>You prefer using Atom as an editor.</h4>
 				<select data-placeholder="" class="chosen-select" id="q2">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -58,7 +58,7 @@
 
 
 				<h3><strong>Question 3</strong></h3>
-				<h4>You enjoy chilling over some greasy food and some alcoholic drinks.</h4>
+				<h4>Proper <i>lint</i> practices are important to you.</h4>
 				<select data-placeholder="" class="chosen-select" id="q3">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -82,7 +82,7 @@
 
 
 				<h3><strong>Question 5</strong></h3>
-				<h4>You like trying different exotic foods.</h4>
+				<h4>You prefer using your CLI before anything else if possible.</h4>
 				<select data-placeholder="" class="chosen-select" id="q5">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -94,7 +94,7 @@
 
 
 				<h3><strong>Question 6</strong></h3>
-				<h4>You prefer going out and partying with lots of people.</h4>
+				<h4>You prefer using GitHub over GitLab.</h4>
 				<select data-placeholder="" class="chosen-select" id="q6">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -106,7 +106,7 @@
 
 
 				<h3><strong>Question 7</strong></h3>
-				<h4>You like to eat a lot of junk food.</h4>
+				<h4>Question 7.</h4>
 				<select data-placeholder="" class="chosen-select" id="q7">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -117,7 +117,7 @@
 		      	</select>
 
 				<h3><strong>Question 8</strong></h3>
-				<h4>I prefer having home cooked meals as opposed to ordering out or eating out.</h4>
+				<h4>Question 8.</h4>
 				<select data-placeholder="" class="chosen-select" id="q8">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -128,7 +128,7 @@
 		      	</select>
 
 				<h3><strong>Question 9</strong></h3>
-				<h4>You enjoy eating.</h4>
+				<h4>Question 9.</h4>
 				<select data-placeholder="" class="chosen-select" id="q9">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -139,7 +139,7 @@
 		      	</select>
 
 				<h3><strong>Question 10</strong></h3>
-				<h4>You feel more energetic after eating out with someone.</h4>
+				<h4>Question 10.</h4>
 				<select data-placeholder="" class="chosen-select" id="q10">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
@@ -168,10 +168,14 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h2 class="modal-title"><strong>Your Best Pair Programmer</strong></h2>
+					<h2 class="modal-title"><strong>Programmer Found</strong></h2>
 				</div>
-				<div class="modal-body center-block">
-					<div class="friendcontent">
+				<div class="modal-body text-center">
+					<p>Based on your answers, here is your best pair programmer!</p>
+					<br>
+					<div class="row">
+						<div class="col-sm-4 friend-info"></div>
+						<div class="col-sm-8 friend-photo"></div>
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -181,7 +185,7 @@
 
 		</div>
 	</div>
-	<script src="/assets/get-paired.js"></script>
+	<script src="/assets/git-paired.js"></script>
 </body>
 
 </html>

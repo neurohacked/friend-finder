@@ -22,18 +22,19 @@ $(document).ready(function() {
         // sends the user info the server
         $.post('/api/friends', newFriend).done(function(response) {
             // shows best match in the modal
-            var modalInfo = '<p>Based on your answers, here is your best pair programmer!</p>';
             var matchInfo = $('<p>', {
                 class: 'match-info',
                 text: 'Name: ' + response.name
             });
             var matchPhoto = $('<img>', {
-                class: 'pair-photo',
+                class: 'img-responsive',
                 src: response.photo
             });
             // Show the modal with the best match
-            $('.friendcontent').html('');
-            $('.friendcontent').append(modalInfo, matchInfo, matchPhoto);
+            $('.friend-info').html('');
+            $('.friend-photo').html('');
+            $('.friend-info').append(matchInfo);
+            $('.friend-photo').append(matchPhoto);
             $("#resultsModal").modal('toggle');
         });
     });

@@ -1,8 +1,3 @@
-.pair-photo {
-    max-width: 50%;
+.match-info {
+    font-weight: bold;
 }
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
