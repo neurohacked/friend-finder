@@ -1,2 +1,2 @@
-# friend-finder
-A quick and simple friend finder app using Node.js
+# get-paired
+A quick and simple Node.js app to find someone to pair program with.
