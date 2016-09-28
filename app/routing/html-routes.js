@@ -10,4 +10,9 @@ module.exports = function(app) {
     app.use(function(req, res) {
         res.sendFile(path.join(__dirname + '/../public/home.html'));
     });
+	
+	// if there is a 404 not found error, sends back error msg
+	app.get('*', function(request, response) {
+		response.status(404).send('page not found');
+	});
 };

@@ -22,6 +22,9 @@ app.use(bodyParser.json({
     type: 'application/*+json'
 }));
 
+// set express to use the public folder
+app.use(express.static(__dirname + '/app/public'));
+
 // routing
 require('./app/routing/api-routes.js')(app);
 require('./app/routing/html-routes.js')(app);

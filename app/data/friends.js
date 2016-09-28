@@ -1,5 +1,5 @@
 // friends array
-var friendArray = [{
+var friends = [{
     name: "Dade Murphy",
     photo: "http://i.imgur.com/aiOaDLR.png",
     scores: [
@@ -13,8 +13,7 @@ var friendArray = [{
         "5",
         "4",
         "1"
-    ],
-    sum: 32
+    ]
 }, {
     name: "Kate Libby",
     photo: "https://i.imgur.com/cq75DST.jpg",
@@ -29,8 +28,7 @@ var friendArray = [{
         "5",
         "4",
         "1"
-    ],
-    sum: 26
+    ]
 }];
 
-module.exports = friendArray;
+module.exports = friends;

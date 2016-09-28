@@ -1,0 +1,8 @@
+.pair-photo {
+    max-width: 50%;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
