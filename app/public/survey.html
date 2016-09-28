@@ -236,6 +236,7 @@
                     photo: $("#photo").val(),
                     scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
                 }
+                console.log(userData);
 
                 // Grab the URL of the website
                 var currentURL = window.location.origin;
@@ -250,11 +251,15 @@
                     // Show the modal with the best match
                     $("#resultsModal").modal('toggle');
 
+                    // Clear the form when submitting
+                    $('#name').val("");
+                    $('#photo').val("");
+                    $('#q1').val("");
+                    $('#q2').val("");
                 });
             } else {
                 alert("Please fill out all fields before submitting!");
             }
-
             return false;
         });
     </script>
