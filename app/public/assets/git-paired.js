@@ -35,6 +35,11 @@ $(document).ready(function() {
             $('.friend-info').append(matchInfo).addClass('match-info');
             $('.friend-photo').append(matchPhoto);
             $("#resultsModal").modal('toggle');
+
+            // clear form data
+			$("#name").val('');
+			$("#email").val('');
+			$("#photo").val('');
         });
     });
 });
