@@ -1,10 +1,15 @@
 {
-  "name": "friend-finder",
+  "name": "get-paired",
   "version": "1.0.0",
-  "description": "A quick and simple friend finder app using Node.js",
-  "main": "index.js",
+  "description": "A quick and simple Node.js app to find someone to pair program with.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.15.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/neurohacked/friend-finder/issues"
   },
-    "devDependencies": {
-        "express": "^4.14.0",
-        "body-parser": "^1.15.2"
-    },
-    "homepage": "https://github.com/neurohacked/neuronet#readme"
+  "homepage": "https://github.com/neurohacked/friend-finder#readme"
 }
