@@ -41,7 +41,9 @@ $(document).ready(function() {
             $("#email").val('');
             $("#photo").val('');
             $('select').each(function() {
-                this.selectedIndex = 0;
+                $('a').attr("class","chosen-single chosen-default");
+                $('span').html('Select an Option');
+                $('abbr').remove();
             });
         });
     });
