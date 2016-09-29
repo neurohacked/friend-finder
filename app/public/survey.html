@@ -36,7 +36,7 @@
 
 				<h3><strong>Question 1</strong></h3>
 				<h4>You prefer using Sublime Text as an editor.</h4>
-				<select data-placeholder="" class="chosen-select" id="q1">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q1">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -47,7 +47,7 @@
 
 				<h3><strong>Question 2</strong></h3>
 				<h4>You prefer using Atom as an editor.</h4>
-				<select data-placeholder="" class="chosen-select" id="q2">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q2">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -59,7 +59,7 @@
 
 				<h3><strong>Question 3</strong></h3>
 				<h4>Proper syntax and <i>lint</i> practices are important to you.</h4>
-				<select data-placeholder="" class="chosen-select" id="q3">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q3">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -71,7 +71,7 @@
 
 				<h3><strong>Question 4</strong></h3>
 				<h4>You rarely try anything different or out of your comfort zone.</h4>
-				<select data-placeholder="" class="chosen-select" id="q4">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q4">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -83,7 +83,7 @@
 
 				<h3><strong>Question 5</strong></h3>
 				<h4>You prefer using your CLI before anything else if possible.</h4>
-				<select data-placeholder="" class="chosen-select" id="q5">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q5">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -95,7 +95,7 @@
 
 				<h3><strong>Question 6</strong></h3>
 				<h4>You prefer using GitHub over GitLab.</h4>
-				<select data-placeholder="" class="chosen-select" id="q6">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q6">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -107,7 +107,7 @@
 
 				<h3><strong>Question 7</strong></h3>
 				<h4>You prefer tabs, not spaces.</h4>
-				<select data-placeholder="" class="chosen-select" id="q7">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q7">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -118,7 +118,7 @@
 
 				<h3><strong>Question 8</strong></h3>
 				<h4>You prefer React over Angular.</h4>
-				<select data-placeholder="" class="chosen-select" id="q8">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q8">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -129,7 +129,7 @@
 
 				<h3><strong>Question 9</strong></h3>
 				<h4>Apple products are your weapon of choice.</h4>
-				<select data-placeholder="" class="chosen-select" id="q9">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q9">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -140,7 +140,7 @@
 
 				<h3><strong>Question 10</strong></h3>
 				<h4>You would rather spend time fixing an issue in your code before stopping to take a break.</h4>
-				<select data-placeholder="" class="chosen-select" id="q10">
+				<select data-placeholder="Select an Option" class="chosen-select" id="q10">
 			 		<option value=""></option>
 		            <option value="1">1 (Strongly Disagree)</option>
 		            <option value="2">2</option>
@@ -187,24 +187,11 @@
 	</div>
 	<script type="text/javascript">
 		// Chosen CSS
-		var config = {
-			'.chosen-select': {},
-			'.chosen-select-deselect': {
-				allow_single_deselect: true
-			},
-			'.chosen-select-no-single': {
-				disable_search_threshold: 10
-			},
-			'.chosen-select-no-results': {
-				no_results_text: 'Oops, nothing found!'
-			},
-			'.chosen-select-width': {
-				width: "95%"
-			}
-		}
-		for (var selector in config) {
-			$(selector).chosen(config[selector]);
-		}
+		$(".chosen-select").chosen({
+			allow_single_deselect: true,
+			width: "100%"
+		});
+
 	</script>
 	<script type="text/javascript" src="/assets/git-paired.js"></script>
 </body>

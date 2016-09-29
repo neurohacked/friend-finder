@@ -37,9 +37,12 @@ $(document).ready(function() {
             $("#resultsModal").modal('toggle');
 
             // clear form data
-			$("#name").val('');
-			$("#email").val('');
-			$("#photo").val('');
+            $("#name").val('');
+            $("#email").val('');
+            $("#photo").val('');
+            $('select').each(function() {
+                this.selectedIndex = 0;
+            });
         });
     });
 });
