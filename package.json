@@ -1,28 +1,28 @@
 {
-  "name": "get-paired",
+  "name": "git-paired",
   "version": "1.0.0",
   "description": "A quick and simple Node.js app to find someone to pair program with.",
   "main": "server.js",
   "dependencies": {
     "express": "^4.14.0"
   },
-    "devDependencies": {
-        "express": "^4.14.0",
-        "body-parser": "^1.15.2"
-    },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neurohacked/get-paired.git"
+    "url": "git+https://github.com/neurohacked/git-paired.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "neurohacked",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/neurohacked/get-paired/issues"
+    "url": "https://github.com/neurohacked/git-paired/issues"
   },
-  "homepage": "https://github.com/neurohacked/get-paired#readme"
+  "homepage": "https://github.com/neurohacked/git-paired#readme"
 }
